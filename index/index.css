@@ -9,34 +9,73 @@ a{
 }
 
 body{
-    background-color:snow;
-
+    
     display:flex;
     justify-content: center;
     align-items: center;
     
+    background-color:darkolivegreen;
+
     width: 100%;
     height: 730px;
 }
 
+
+
+/*div maior*/
 #pai{
     border-radius: 8px;
     border: solid 2px black;
-    width: 85%;
+    width: 70%;
     height: 90%;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5% 20% 75%;
+
+    background-color: azure;
 }
 
-#filha{
+/*divs que pertencem ao a1*/
+#a1{
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+}
 
-    border-radius: 10px;
-    border: solid 1px rgba(0, 0, 0, 0.397);
+/*filhas do a1*/
+#b1{
+    grid-area: 1/1/2/2;
     
-    width: 10%;
-    height: 10%;
+}
 
+/*netas do a1*/
+#filha{
+  border-radius: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.397);
+    margin-right: 150px;
     
     color:rgba(0, 0, 0, 0.692);
     font-family:  'Nunito', sans-serif;
-    background-color: rgba(85, 107, 47, 0.589);
+    text-align: center;
 }
+   
+
+#a2{
+    grid-area: 3/2/4/3;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#c1{
+    margin-right: 50px;
+}
+
+
+
+
 

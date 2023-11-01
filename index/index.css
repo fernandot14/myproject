@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: black;
+    text-decoration-line: none;
+}
+
+body{
+    background-color:snow;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 730px;
+}
+
+#pai{
+    border-radius: 8px;
+    border: solid 2px black;
+    width: 85%;
+    height: 90%;
+}
+
+#filha{
+
+    border-radius: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.397);
+    
+    width: 10%;
+    height: 10%;
+
+    
+    color:rgba(0, 0, 0, 0.692);
+    font-family:  'Nunito', sans-serif;
+    background-color: rgba(85, 107, 47, 0.589);
+}
+

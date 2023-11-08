@@ -3,79 +3,162 @@
     margin: 0;
 }
 
-a{
-    color: black;
-    text-decoration-line: none;
-}
-
-body{
-    
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-    background-color:darkolivegreen;
-
+body{ /*determinei o body, aplicando tamanho e centralizando a div de id=pai*/
     width: 100%;
-    height: 730px;
-}
-
-
-
-/*div maior*/
-#pai{
-    border-radius: 8px;
-    border: solid 2px black;
-    width: 70%;
-    height: 90%;
-
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 5% 20% 75%;
-
-    background-color: azure;
-}
-
-/*divs que pertencem ao a1*/
-#a1{
-    grid-area: 2 / 2 / 3 / 3;
+    height: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
 }
 
-/*filhas do a1*/
-#b1{
-    grid-area: 1/1/2/2;
+
+#pai{ /*esta div corresponde a uma grande divisão onde estarão armazenadas as informações do site*/
     
+    width: 80%;
+    height: 80%;
+
+    border-radius: 15px;
+
+    background-color:white;
+    background: linear-gradient(270deg,rgb(46, 86, 119),LightBlue);
+
+    display: flex;
+    flex-direction: column;
 }
 
-/*netas do a1*/
-#filha{
-  border-radius: 10px;
-    border: solid 1px rgba(0, 0, 0, 0.397);
-    margin-right: 150px;
-    
-    color:rgba(0, 0, 0, 0.692);
-    font-family:  'Nunito', sans-serif;
-    text-align: center;
-}
-   
+#head{
+    width: 100%;
+    height: 20%;
 
-#a2{
-    grid-area: 3/2/4/3;
-    display:flex;
+    display: grid;
+    grid-template-columns: 50% 8% 7% 5% 7% 5% 7% 11%;
+    grid-template-rows: 25% 5% 40% 6% 14% 10%;
+}
+
+#main{
+    width: 100%;
+    height: 80%;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: start;
+}
+
+#logo{
+
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#c1{
-    margin-right: 50px;
+#auxiliadoramain{
+    grid-column: 1/2;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+#conteudo{
+    
+    border-radius: 10px;
+
+    text-align:justify;
+
+    width: 80%;
+    height: 80%;
+}
+
+#entrar{
+    
+    grid-area: 3/7/4/8;
+
+    border-radius:40px;
+    background-color: white;
+
+    font-family: "nunito";
+    font-size: 30px;
+    text-align: center;
 
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+}
 
+a{
+    text-decoration-line: none;
+    color: steelblue;
+    font-size: 90%;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+video{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+    z-index: -1;
+}
+
+#auxident{
+    grid-area: 1/1/6/2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#ident{
+    color: white;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#auxair{
+    grid-area: 5/1/6/2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+#air{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+.text{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre{
+    grid-area: 3/3/4/4;
+}
+
+#contato{
+    grid-area: 3/5/4/6;
+}

@@ -48,6 +48,39 @@ body{
     align-items: center;
 }
 
+#nome{
+    grid-area: 2/2/3/3;
+    
+   display: grid;
+   grid-template-rows: 50% 50%;
+}
+#viagens{
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 300%;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+#Inesqueciveis{
+
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 250%;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
 
 #auxinfor{
     grid-area: 2/3/3/4;

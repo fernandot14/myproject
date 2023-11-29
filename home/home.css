@@ -8,6 +8,12 @@ a{
     text-decoration-line: none;
 }
 
+.letra{
+    color: rgb(46, 86, 119);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 body{
 
     height: 2200px;
@@ -35,8 +41,8 @@ body{
 /*parte destinada ao head*/
 #head{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1% 2fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1% 66% 33%;
 }
 
 
@@ -48,15 +54,16 @@ body{
     align-items: center;
 }
 
-#nome{
-    grid-area: 2/2/3/3;
-    
+#Nome{
+   grid-column: 2/3;
+   grid-row: 2/3; 
+
+
    display: grid;
    grid-template-rows: 50% 50%;
 }
 #viagens{
-    width: 100%;
-    height: 100%;
+    grid-area: 1/1/2/2;
 
     font-family: 'Montserrat', sans-serif;
     font-size: 300%;
@@ -65,12 +72,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: start;
+    align-items: center;
 }
 #Inesqueciveis{
-
-    width: 100%;
-    height: 100%;
+    grid-area: 2/1/3/2;
 
     font-family: 'Montserrat', sans-serif;
     font-size: 250%;
@@ -79,7 +84,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: start;
+    align-items: center;
 }
 
 #auxinfor{
@@ -143,14 +148,28 @@ body{
 
     width: 80%;
     height: 40%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 200%;
+    color: rgb(46, 86, 119);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #auxcbp1{
     grid-area: 3/1/4/2;
     
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+#asia{
+    background-image: url(../imagens/outros/gettyimages-1390815938.jpg);
+    background-repeat: no-re;
+}
+
 #auxcbp2{
     grid-area: 3/2/4/3;
     
@@ -264,7 +283,18 @@ body{
     font-size: 200%;
 }
 #cmz:hover{
-    opacity: 0%;
+    animation: cmz 2s forwards;
+}
+
+@keyframes cmz{
+    0%{
+        opacity: 100%;
+        background-color: #D9D9D9;
+    }
+    100%{
+        opacity: 0%;
+        background-color: green;
+    }
 }
 
 
@@ -284,11 +314,99 @@ body{
 
     background-color: white;
 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
+#imgcbg{
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
 
+    grid-area: 1/1/2/2;
+    background-image: url(../imagens/outros/torres.jpeg);
+    background-repeat: no-repeat;
+}
 
+#cadastro{
+    grid-area: 1/2/2/3;
 
+    display: grid;
+    grid-template-rows: 20% 10% 70%;
+    grid-template-columns: 30% 40% 30%;
+}
+
+#cadescri{
+    grid-area: 1/2/2/3;
+
+    color:  rgb(46, 86, 119);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 180%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#cadescri2{
+    grid-area: 2/2/3/3;
+
+    color:  rgb(46, 86, 119);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#formulario{
+    grid-area: 3/1/4/4;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#nome{
+    grid-area: 1/1/2/2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#e-mail{
+    grid-area: 2/1/3/2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao{
+    grid-area: 3/1/4/2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infor{
+    background-color: lightblue;
+    border-radius: 10px;
+}
+.formescri{
+    font-family: 'Montserrat', sans-serif;
+}
+#voar{
+    font-family: 'Montserrat', sans-serif;
+
+    width: 300%;
+    height: 300%;
+
+    color: black;
+}
 
 
 
@@ -315,6 +433,12 @@ body{
     border-radius: 40px;
 
     background-color: #D9D9D9;
+
+    font-size: 200%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #auxviaint{
@@ -331,6 +455,38 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+#cairo{
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+#imgcairo{
+    grid-area: 1/1/2/2;
+
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+    background-image: url(../imagens/outros/landscape-5584652_1280.jpg);
+    background-repeat: no-repeat;
+}
+
+#escricairo{
+    font-size: 150%;
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cairoverde{
+    color: green;
+    font-size: 180%;
+    font-family: 'Montserrat', sans-serif;
+}
+
 #auxucrania{
     grid-area: 1/2/2/3;
 
@@ -338,6 +494,38 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+#ucrania{
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+#imgucrania{
+    grid-area: 1/1/2/2;
+
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+    background-image: url(../imagens/outros/ukraine-720233_1280.jpg);
+    background-repeat: no-repeat;
+}
+
+#escriucrania{
+    font-size: 150%;
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ucraniaverde{
+    color: green;
+    font-size: 180%;
+    font-family: 'Montserrat', sans-serif;
+}
+
 #auxparis{
     grid-area: 1/3/2/4;
 
@@ -345,6 +533,35 @@ body{
     align-items: center;
     justify-content: center;
 }
+#paris{
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+#imgparis{
+    grid-area: 1/1/2/2;
+
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+    background-image: url(../imagens/outros/eiffel-tower-3349075_640.jpg);
+    background-repeat: no-repeat;
+}
+#escriparis{
+    font-size: 150%;
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#parisverde{
+    color: green;
+    font-size: 180%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
 #auxtokyo{
     grid-area: 1/4/2/5;
 
@@ -352,6 +569,40 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+#tokyo{
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+#imgtokyo{
+    grid-area: 1/1/2/2;
+
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+    background-image: url(../imagens/outros/night-4336403_1280.jpg);
+    background-repeat: no-repeat;
+}
+
+#escritokyo{
+    font-size: 150%;
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tokyoverde{
+    color: green;
+    font-size: 180%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
 
 /*trabalhando com cada viagen depois de ter preparados suas devidas posiçoes*/
 
@@ -412,6 +663,8 @@ body{
     height: 70%;
 
     border-radius: 40px;
+
+    font-size: 200%;
 
     background-color:#D9D9D9;
 }

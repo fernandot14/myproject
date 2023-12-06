@@ -40,6 +40,7 @@ body{
 /*---------------------------------------------------------------------------------------------------------------------------------------------*/
 /*parte destinada ao head*/
 #head{
+
     grid-area: 1/1/2/2;
 
     display: grid;
@@ -199,6 +200,7 @@ body{
 /*----------------------------------------------------------------------------------------------------------------------------------------------*/
 /*parte destinada ao main1*/
 #main1{
+
     grid-area: 2/1/3/2;
 
     display: grid;
@@ -418,6 +420,7 @@ body{
 /*----------------------------------------------------------------------------------------------------------------------------------------------*/
 /*paret destinada ao main2*/
 #main2{
+
     grid-area: 3/1/4/2;
 
     display: grid;
@@ -478,7 +481,7 @@ body{
 }
 
 #escricairo{
-    font-size: 150%;
+    font-size: 130%;
     font-family: 'Montserrat', sans-serif;
 
     display: flex;
@@ -489,7 +492,7 @@ body{
 
 #cairoverde{
     color: green;
-    font-size: 180%;
+    font-size: 160%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -517,7 +520,7 @@ body{
 }
 
 #escriucrania{
-    font-size: 150%;
+    font-size: 130%;
     font-family: 'Montserrat', sans-serif;
 
     display: flex;
@@ -528,7 +531,7 @@ body{
 
 #ucraniaverde{
     color: green;
-    font-size: 180%;
+    font-size: 160%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -553,7 +556,7 @@ body{
     background-repeat: no-repeat;
 }
 #escriparis{
-    font-size: 150%;
+    font-size: 130%;
     font-family: 'Montserrat', sans-serif;
 
     display: flex;
@@ -563,7 +566,7 @@ body{
 }
 #parisverde{
     color: green;
-    font-size: 180%;
+    font-size: 160%;
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -592,7 +595,7 @@ body{
 }
 
 #escritokyo{
-    font-size: 150%;
+    font-size: 130%;
     font-family: 'Montserrat', sans-serif;
 
     display: flex;
@@ -603,7 +606,7 @@ body{
 
 #tokyoverde{
     color: green;
-    font-size: 180%;
+    font-size: 160%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -652,6 +655,7 @@ body{
 /*------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*parte destinada ao main 3*/
 #main3{
+
     grid-area: 4/1/5/2;
 
     display: grid;
@@ -708,7 +712,7 @@ body{
     background-repeat: no-repeat;
 
     border-top-left-radius: 40px;
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 40px;
 }
 #escriburi{
     grid-area: 1/2/2/3;
@@ -734,7 +738,7 @@ body{
     grid-area: 2/2/3/3;
 
     font-family: 'Montserrat', sans-serif;
-    font-size: 200%;
+    font-size: 170%;
 
     color: green;
 
@@ -747,7 +751,7 @@ body{
     grid-area: 3/2/4/3;
 
     font-family: 'Montserrat', sans-serif;
-    font-size: 100%;
+    font-size: 80%;
 
     display: flex;
     flex-direction: column;
@@ -758,7 +762,7 @@ body{
     grid-area: 4/2/5/3;
 
     font-family: 'Montserrat', sans-serif;
-    font-size: 100%;
+    font-size: 90%;
     text-align: center;
 
     color: rgb(46, 86, 119);
@@ -824,6 +828,7 @@ body{
 /*----------------------------------------------------------------------------------------------------------------------------------------------*/
 /*parte destindada ao bottom*/
 #bottom{
+
     grid-area: 5/1/6/2;
 
     display: grid;

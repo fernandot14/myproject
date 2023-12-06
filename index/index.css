@@ -28,6 +28,7 @@ body{ /*determinei o body, aplicando tamanho e centralizando a div de id=pai*/
 }
 
 #head{
+
     width: 100%;
     height: 20%;
 
@@ -37,6 +38,7 @@ body{ /*determinei o body, aplicando tamanho e centralizando a div de id=pai*/
 }
 
 #main{
+
     width: 100%;
     height: 80%;
 
@@ -127,7 +129,7 @@ video{
 
 #ident{
     color: white;
-    font-size: 50px;
+    font-size: 45px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -162,3 +164,4 @@ video{
 #contato{
     grid-area: 3/5/4/6;
 }
+

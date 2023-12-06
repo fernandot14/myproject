@@ -168,10 +168,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-#asia{
-    background-image: url(../imagens/outros/gettyimages-1390815938.jpg);
-    background-repeat: no-re;
-}
 
 #auxcbp2{
     grid-area: 3/2/4/3;
@@ -832,7 +828,7 @@ body{
     grid-area: 5/1/6/2;
 
     display: grid;
-    grid-template-columns: 50%  50%;
+    grid-template-columns: 70%  30%;
     grid-template-rows: 5% 95%;
 }
 
